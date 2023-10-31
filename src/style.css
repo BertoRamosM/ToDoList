@@ -1,0 +1,188 @@
+:root{
+    --main-color: ivory;
+    --second-color: teal;
+    --third-color: lightsteelblue;
+    --work-card: crimson;
+}
+
+*{
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+}
+
+
+#header{
+    height: 10vh;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-container{
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-left: 2.8rem;
+    
+}
+.search-header{
+    height: 1.4rem;
+    width: 15rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--main-color);
+    margin-left: 0.5rem;
+    flex: 1;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    left: 1%;
+    cursor: pointer;
+}
+
+
+  
+.header-icon{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.fa-bars{
+    margin-left: 2rem;
+}
+
+.fa-plus{
+    font-size: 1.5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    padding: 0.2rem;
+    padding-left: 0.3rem;
+    margin-right: 7rem;
+}
+.fa-solid{
+    cursor: pointer;
+}
+
+.fa-circle-user{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+
+
+/*CONTENT CONTAINER*/
+#content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 83vh;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    display: flex;
+}
+
+
+/*SIDE BAR*/
+#side-bar{
+    height:76.3vh;
+    width: 20vw;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+   padding-top: 3rem;
+    align-items: center;
+    gap: 4rem;
+}
+
+#side-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 5px solid var(--main-color);
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#side-bar > *{
+    cursor: pointer;
+}
+
+#personal-side, #work-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid var(--main-color);
+    width: 100%;
+    padding-bottom: 4.5rem;
+    
+}
+
+/*cards container and cards*/
+#card-container{
+    width: 90%;
+    height: 82vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 0.5rem;
+    overflow:auto;
+}
+
+.card{
+    background-color: var(--main-color);
+    margin: 1rem;
+    border-radius: 20px;
+    border-left: 5px solid var(--second-color);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 10rem;
+}
+
+.personal-card{
+    border-left: 5px solid var(--second-color);
+}
+
+.work-card{
+    border-left: 5px solid var(--work-card);
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    background-color: var(--second-color);
+    height: 7vh;
+    color: var(--main-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+footer >*{
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+.fa-envelope{
+    margin-right: 5rem;
+}
+
